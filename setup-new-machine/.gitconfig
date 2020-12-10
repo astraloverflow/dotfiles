@@ -1,0 +1,6 @@
+[user]
+    name = Samuel
+    email = astraloverflow@pm.me
+[commit]
+    gpgsign = true
+
