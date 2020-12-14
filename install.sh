@@ -12,7 +12,7 @@ elif [[ $1 = "tmux" ]]; then
 
 elif [[ $1 = "vim" ]]; then
   echo "vim Selected"
-  cp ~/.dotfiles/vimrc.vim ~/.vimrc \
+  cp ~/dotfiles/vimrc.vim ~/.vimrc \
   && echo ".vimrc copied successfully"
 
 elif [[ $1 = "vim-plug" ]]; then
@@ -23,7 +23,7 @@ elif [[ $1 = "vim-plug" ]]; then
 
 elif [[ $1 = "vim-minimal" ]]; then
   echo "vim-minimal Selected"
-  cp ~/.dotfiles/vim/vimrc-minimal.vim ~/.vimrc \
+  cp ~/dotfiles/vim/vimrc-minimal.vim ~/.vimrc \
   && echo ".vimrc copied successfully"
 
 else
