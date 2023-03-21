@@ -5,6 +5,11 @@ if [[ $1 = "bash" ]]; then
   cp ~/dotfiles/bashrc.sh ~/.bashrc \
   && echo ".bashrc copied successfully"
 
+elif [[ $1 = "zsh" ]]; then
+  echo "zsh Selected"
+  cp ~/dotfiles/zshrc.sh ~/.zshrc \
+  && echo ".zshrc copied successfully"
+
 elif [[ $1 = "tmux" ]]; then
   echo "tmux Selected"
   cp ~/dotfiles/tmux.conf ~/.tmux.conf \

@@ -10,5 +10,4 @@
 . ~/dotfiles/bash.sh
 
 # Include local machine specific tweaks & overrides
-[[ -f ~/dotfiles/bash.local.sh ]] && . ~/dotfiles/bash.local.sh
-
+[[ -f ~/dotfiles/local/bash.sh ]] && . ~/dotfiles/local/bash.sh

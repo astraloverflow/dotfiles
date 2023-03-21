@@ -1,5 +1,6 @@
 call plug#begin()
 " Color Scheme Plugins
+  Plug 'ajmwagar/vim-deus'
   Plug 'NLKNguyen/papercolor-theme'
 " Feature Plugins
   Plug 'tpope/vim-sensible'
@@ -9,6 +10,7 @@ call plug#begin()
   Plug 'Yggdroot/indentLine'
 " Language Plugins
   Plug 'sheerun/vim-polyglot'
+  Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 set exrc
@@ -33,7 +35,8 @@ set shiftwidth=4
 set t_Co=256
 set background=dark
 
-colorscheme PaperColor
+colorscheme deus
+"colorscheme PaperColor
 
 let g:vim_markdown_conceal=0
 let g:vim_markdown_frontmatter=1
