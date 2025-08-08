@@ -1,3 +1,4 @@
 local/*
 !local/bash.example.sh
 !local/zsh.example.sh
+.DS_Store
