@@ -23,7 +23,8 @@ export EDITOR=vim
 # zmodload zsh/zutil
 
 # Enable Autocompletion & Suggestions
-autoload -Uz compinit && compinit
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit && compinit -u
 setopt auto_menu
 # ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
 
@@ -32,6 +33,7 @@ setopt auto_menu
 PROMPT="[%F{yellow}%m%f » %F{cyan}%n%f] %F{green}%~%f $ "
 
 # Add Stuff to $PATH
+PATH=/opt/homebrew/bin:$PATH
 [[ -d $HOME/.bin ]] && PATH=$HOME/.bin:$PATH
 [[ -d $HOME/bin ]] && PATH=$HOME/bin:$PATH
 
@@ -45,7 +47,7 @@ antigen bundle mfaerevaag/wd
 antigen apply
 
 # Add wd to completions
-fpath=(~/path/to/wd $fpath)
+# fpath=(~/path/to/wd $fpath)
 
 # Aliases
 alias dotfiles="~/dotfiles/install.sh"
@@ -62,6 +64,11 @@ alias grep="grep --color=auto"
 alias vi="vim"
 alias nv="nvim"
 alias gst="git status"
+alias gcc='gcc-14'
+alias g++='g++-14'
+alias python="python3"
+alias pip="pip3"
+alias love="~/Applications/love.app/Contents/MacOS/love"
 
 # Tmux Session Function
 function session {
@@ -86,3 +93,5 @@ function tar_exclude_npm {
         tar -cvf --exclude='node_modules' --exclude='.git/*' --exclude='.cache/*' -cvf $2.tar $1
     fi
 }
+
+eval "$(zoxide init zsh)"

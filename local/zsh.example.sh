@@ -7,8 +7,8 @@
 #####################################################
 
 # Some example local aliases
-alias ~dev="cd ~/dev"
-alias ~github="cd ~/dev/github/"
+alias dev="cd ~/dev"
+alias github="cd ~/dev/github/"
 
 # Maybe you use VS Code instead of vim
 #export EDITOR=code;
